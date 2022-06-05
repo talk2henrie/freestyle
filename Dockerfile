@@ -12,6 +12,6 @@ FROM openjdk:8-jre-alpine
 
 WORKDIR /app
 
-COPY --from=MAVEN_BUILD /build/target/SLMFrontendAPI.jar /app/
+COPY --from=MAVEN_BUILD /build/target/freestyle-0.0.1-SNAPSHOT.jar /app/
 
-ENTRYPOINT ["java", "-jar", "SLMFrontendAPI.jar"]
+ENTRYPOINT ["java", "-jar", "freestyle-0.0.1-SNAPSHOT.jar"]
